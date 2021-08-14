@@ -8,11 +8,12 @@ import java.util.List;
 
 @Service
 public class UserService {
-    private List<User> userList=new ArrayList<>();
-    public List<User> getUser(){
-        return this.userList;
+    List<User> users = new ArrayList<>();
+    public User add_user(User user){
+        users.add(user);
+        return user;
     }
-    public void addUser(User user){
-        this.userList.add(user);
+    public List<User> getAllUser(){
+        return this.users;
     }
 }

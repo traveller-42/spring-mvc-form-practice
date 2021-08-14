@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = {"com.siam.controllers"})
+@ComponentScan(basePackages = {"com.siam.controller"})
 public class WebMvcConfig implements WebMvcConfigurer {
     public void configureViewResolvers(ViewResolverRegistry registry){
          registry.jsp("/WEB-INF/views/",".jsp");
